@@ -80,11 +80,12 @@ export default function EditorPage() {
   };
 
   const log = () => {
-    const templateNode = document.getElementById("templateImage");
+    // const templateNode = document.getElementById("templateImage");
+    // console.log("first",templateNode)
     if (editorRef.current) {
       // templateNode.style.display="block";
-      templateNode.innerHTML = editorRef.current.getContent();
-      // setValue(editorRef.current.getContent())
+      // templateNode.innerHTML = editorRef.current.getContent();
+      setValue(editorRef.current.getContent())
       toast("Saved Successfully");
       // saveAsPng(templateNode);
       // console.log(editorRef.current.getContent());
